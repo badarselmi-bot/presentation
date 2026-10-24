@@ -1,0 +1,35 @@
+import {useEffect,useRef,useState} from 'react';
+import {narrativeScenes,sceneDurations} from './narrative';
+type Status='ready'|'playing'|'paused'|'finished';
+type Frame={scene:number;fraction:number;status:Status;muted:boolean;voiceAvailable:boolean;voiceActive:boolean;notice:string};
+export function useNarrative(){
+  const [frame,setFrame]=useState<Frame>({scene:0,fraction:0,status:'ready',muted:false,voiceAvailable:false,voiceActive:false,notice:'Vérification des voix françaises…'});
+  const e=useRef({scene:0,elapsed:0,status:'ready' as Status,muted:false,voice:null as SpeechSynthesisVoice|null,voiceActive:false,audioPending:false,ownsAudio:false,token:0,notice:'Vérification des voix françaises…',last:0,lastPublish:0,utterance:null as SpeechSynthesisUtterance|null,startTimer:0});
+  const publish=()=>{const x=e.current;setFrame({scene:x.scene,fraction:Math.min(1,x.elapsed/sceneDurations[x.scene]),status:x.status,muted:x.muted,voiceAvailable:!!x.voice,voiceActive:x.voiceActive,notice:x.notice})};
+  const cancelAudio=()=>{const x=e.current;x.token++;clearTimeout(x.startTimer);if(x.ownsAudio&&'speechSynthesis' in window)window.speechSynthesis.cancel();x.ownsAudio=false;x.audioPending=false;x.voiceActive=false;x.utterance=null};
+  const nextRef=useRef<()=>void>(()=>{});
+  const speak=(offset=0)=>{const x=e.current;if(!x.voice||x.muted||!('speechSynthesis' in window))return;
+    const token=++x.token;const text=narrativeScenes[x.scene].text;const words=text.split(/\s+/);const skip=Math.min(words.length-1,Math.floor(offset*words.length));const spoken=words.slice(skip).join(' ');const skippedChars=words.slice(0,skip).join(' ').length+(skip?1:0);
+    const utterance=new SpeechSynthesisUtterance(spoken);x.utterance=utterance;utterance.voice=x.voice;utterance.lang='fr-FR';utterance.rate=1.12;utterance.pitch=1;x.audioPending=true;x.ownsAudio=true;
+    const fallback=()=>{if(token!==x.token)return;cancelAudio();x.notice='Audio indisponible : la narration visuelle continue, avec ses sous-titres.';x.last=performance.now();publish()};
+    x.startTimer=window.setTimeout(fallback,10000);
+    utterance.onstart=()=>{if(token!==x.token)return;clearTimeout(x.startTimer);x.voiceActive=true;x.notice='Voix française en cours · synchronisation indicative.';x.last=performance.now();publish()};
+    utterance.onboundary=event=>{if(token!==x.token||x.status!=='playing')return;const fraction=Math.min(.97,(skippedChars+event.charIndex)/text.length);x.elapsed=Math.max(x.elapsed,fraction*sceneDurations[x.scene]);publish()};
+    utterance.onend=()=>{if(token!==x.token)return;clearTimeout(x.startTimer);x.ownsAudio=false;x.audioPending=false;x.voiceActive=false;if(x.status==='playing')nextRef.current()};
+    utterance.onerror=event=>{if(token!==x.token||event.error==='canceled'||event.error==='interrupted')return;fallback()};
+    window.speechSynthesis.speak(utterance);
+  };
+  const next=()=>{const x=e.current;cancelAudio();if(x.scene===narrativeScenes.length-1){x.status='finished';x.elapsed=sceneDurations[x.scene];x.notice='Le récit est terminé. Retenons les quatre leviers de fidélisation.';publish();return}x.scene++;x.elapsed=0;x.last=performance.now();if(x.status==='playing')speak();publish()};nextRef.current=next;
+  useEffect(()=>{const x=e.current;let raf=0;let alive=true;
+    const voices=()=>{if(!alive)return;x.voice='speechSynthesis' in window?window.speechSynthesis.getVoices().filter(v=>/^fr([_-]|$)/i.test(v.lang)).sort((a,b)=>Number(b.lang==='fr-FR')-Number(a.lang==='fr-FR'))[0]||null:null;if(x.status==='ready')x.notice=x.voice?'Voix française disponible. La lecture démarre uniquement à votre demande.':'Aucune voix française détectée. La lecture visuelle reste disponible.';publish()};voices();if('speechSynthesis' in window)window.speechSynthesis.addEventListener('voiceschanged',voices);
+    const tick=(time:number)=>{if(!alive)return;if(x.status==='playing'){const delta=Math.min(.1,Math.max(0,(time-x.last)/1000));x.last=time;if(!x.audioPending||x.voiceActive){x.elapsed+=delta;if(x.elapsed>=sceneDurations[x.scene]){if(x.audioPending)x.elapsed=sceneDurations[x.scene]*.98;else{nextRef.current();raf=requestAnimationFrame(tick);return}}}if(time-x.lastPublish>45){publish();x.lastPublish=time}}else x.last=time;raf=requestAnimationFrame(tick)};raf=requestAnimationFrame(tick);
+    return()=>{alive=false;cancelAnimationFrame(raf);clearTimeout(x.startTimer);if('speechSynthesis' in window)window.speechSynthesis.removeEventListener('voiceschanged',voices);cancelAudio()};
+  },[]);
+  const play=()=>{const x=e.current;if(x.status==='playing')return;if(x.status==='finished'){cancelAudio();x.scene=0;x.elapsed=0}const resume=x.status==='paused'&&x.audioPending;x.status='playing';x.last=performance.now();if(resume&&'speechSynthesis' in window){window.speechSynthesis.resume();x.voiceActive=true;x.notice='Voix française en cours · synchronisation indicative.'}else{speak(x.elapsed/sceneDurations[x.scene]);if(!x.voice||x.muted)x.notice=x.muted?'Lecture visuelle · son désactivé.':'Lecture visuelle · aucune voix française disponible.'}publish()};
+  const pause=()=>{const x=e.current;if(x.status!=='playing')return;x.status='paused';if(x.audioPending&&'speechSynthesis' in window){window.speechSynthesis.pause();x.voiceActive=false}x.notice='En pause. Les sous-titres restent visibles.';publish()};
+  const restart=()=>{const x=e.current;cancelAudio();x.scene=0;x.elapsed=0;x.status='ready';x.notice='Prêt à recommencer. Appuyez sur Lecture.';publish()};
+  const toggleSound=()=>{const x=e.current;const fraction=x.elapsed/sceneDurations[x.scene];cancelAudio();x.muted=!x.muted;if(!x.muted&&x.status==='playing')speak(fraction);x.notice=x.muted?'Son désactivé. La lecture visuelle continue.':x.voice?'Son activé. Voix française disponible.':'Aucune voix française disponible ; la lecture reste visuelle.';x.last=performance.now();publish()};
+  const selectScene=(scene:number)=>{const x=e.current;cancelAudio();x.scene=scene;x.elapsed=0;x.status='paused';x.notice='Séquence sélectionnée. Appuyez sur Lecture pour continuer.';publish()};
+  const completed=sceneDurations.slice(0,frame.scene).reduce((a,b)=>a+b,0);
+  return {...frame,progress:frame.status==='finished'?1:(completed+sceneDurations[frame.scene]*frame.fraction)/50,play,pause,restart,toggleSound,selectScene};
+}

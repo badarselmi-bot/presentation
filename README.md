@@ -18,3 +18,6 @@ La diapositive 10 présente le témoignage fictif de Yassine sous forme de perso
 
 
 Avatar humain : portraits photoréalistes fictifs créés par ImageGen, quatre expressions liées au récit, transitions en fondu et mouvements de caméra subtils. Aucun mouvement réel des lèvres ni synchronisation labiale. Asset local : public/illustrations/yassine-human-expressions.png. Prompt dans ASSET-AVATAR.md.
+
+## Séquence narrative actuelle
+La diapositive Yassine est une mini-interview SVG/CSS en six scènes (27 ans), avec le script demandé, des sous-titres progressifs, un lecteur visuel de 50 secondes, la synthèse pédagogique et les commandes Lecture/Pause/Recommencer/Son. La voix française est vérifiée via Web Speech API ; durée audio indicative, synchronisation approximative. Pas de son automatique. Sources réutilisables dans src/story/. La mise en page reste en 16:9 sur vidéoprojecteur et se réorganise sur mobile. Les portraits photographiques de la version précédente ne sont plus utilisés.

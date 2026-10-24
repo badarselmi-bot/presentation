@@ -60,7 +60,7 @@ En Tunisie, la mobilité internationale élargit les possibilités des compéten
 
 Durée indicative : 50 secondes.
 
-Cette séquence est un cas pédagogique fictif. Yassine, développeur en Tunisie, raconte son recrutement, ses doutes et les engagements concrets qui l’ont convaincu de rester. Le personnage animé raconte son expérience avec une voix de synthèse française si le navigateur en dispose. Sinon, l’animation peut être lue sans son et le texte reste affiché. Lancer la lecture ou lire le texte pendant environ cinquante secondes. Faire ensuite le lien avec les leviers étudiés : reconnaissance, formation, évolution et équilibre de vie.
+Cette séquence est un cas pédagogique fictif. Yassine, développeur de 27 ans en Tunisie, raconte en six scènes ses débuts, une offre concurrente, ses doutes, le dialogue avec son manager et sa décision de rester. Le personnage animé raconte son expérience avec une voix de synthèse française si le navigateur en dispose. Sinon, l’animation peut être lue sans son et le texte reste affiché. Lancer la lecture ou lire le texte pendant environ cinquante secondes. La séquence affiche ensuite quatre leviers : reconnaissance, formation, évolution professionnelle et équilibre de vie. La synchronisation de la voix et des expressions est indicative.
 
 ## 11 — Le talent choisit aussi son entreprise
 

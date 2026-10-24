@@ -1,17 +1,54 @@
-# Témoignage vidéo — Yassine
+# Yassine : pourquoi j’ai choisi de rester
 
-Personnage fictif, développeur en Tunisie. Témoignage pédagogique, sans entreprise réelle. Durée cible : 50 secondes. Format : 16:9. Voix masculine adulte, français naturel, ton posé, chaleureux et professionnel. Avatar fictif, cadrage poitrine, fond crème #F7F7F2, vêtements sobres avec accent orange #FF6333. Sous-titres français.
+Personnage fictif, 27 ans, développeur informatique en Tunisie. Cas pédagogique, aucune expérience réelle revendiquée.
 
-## Texte
+Six scènes en SVG/CSS, durée visuelle de 50 secondes. La durée audio varie légèrement avec la voix française disponible (fr-FR, débit 1.12). Le texte complet reste lisible ; les mots s’accentuent progressivement. Aucun son au chargement.
 
-Je m’appelle Yassine, je suis développeur en Tunisie. J’ai rejoint cette entreprise pour ses projets stimulants et la promesse d’apprendre auprès d’une équipe expérimentée.
+## 1. Salut, moi c’est Yassine.
 
-Après quelque temps, mes efforts passaient inaperçus. Je ne voyais plus comment évoluer. Une offre à l’étranger m’a alors donné envie de partir.
+Durée visuelle : 5.6 secondes.
 
-J’en ai parlé à mon manager. Ensemble, nous avons défini un parcours de formation, de nouvelles responsabilités et une organisation du travail plus équilibrée.
+Salut, moi c'est Yassine, j'ai 27 ans et je suis développeur en Tunisie.
 
-Je suis resté parce que ces engagements se sont concrétisés. Le salaire compte, mais la reconnaissance, la confiance et les perspectives font aussi la différence.
+## 2. Motivé… puis des questions.
 
-## État
+Durée visuelle : 9.4 secondes.
 
-Version interactive intégrée : personnage vectoriel animé, transcription en quatre séquences et narration via une voix de synthèse française disponible dans le navigateur. Animation silencieuse avec message explicite en l’absence de voix française. Aucun fichier vidéo MP4 généré.
+Quand j'ai commencé mon travail, j'étais vraiment motivé. Mais après quelque temps, j'ai commencé à me poser des questions sur mon avenir.
+
+## 3. Une autre entreprise me contacte.
+
+Durée visuelle : 5.6 secondes.
+
+Un jour, j'ai reçu une proposition d'une autre entreprise, avec un meilleur salaire.
+
+## 4. Et si je partais ?
+
+Durée visuelle : 2.1 secondes.
+
+J'ai sérieusement pensé à partir.
+
+## 5. Mon manager m’a écouté.
+
+Durée visuelle : 15.8 secondes.
+
+Mais mon manager a pris le temps de m'écouter. Il m'a proposé une formation, de nouvelles responsabilités et un véritable plan d'évolution. J'ai aussi obtenu plus de flexibilité pour mieux équilibrer mon travail et ma vie personnelle.
+
+## 6. J’ai choisi de rester.
+
+Durée visuelle : 11.5 secondes.
+
+Finalement, j'ai décidé de rester. Pas seulement pour le salaire, mais parce que je me sentais reconnu et que je pouvais construire mon avenir dans cette entreprise.
+
+## Synthèse finale
+
+- Reconnaissance
+- Formation
+- Évolution professionnelle
+- Équilibre entre vie professionnelle et personnelle
+
+« Un talent ne reste pas uniquement pour son salaire. Il reste aussi lorsqu’il se sent valorisé et qu’il peut évoluer. »
+
+## Commandes et accessibilité
+
+Lecture, Pause, Recommencer et activation/désactivation du son. Six sélecteurs de scène. Aucune voix française : lecture visuelle. Échec de synthèse : reprise visuelle. Animation limitée si prefers-reduced-motion est activé. Navigation vers une autre diapositive : annulation de la voix, des temporisateurs et de requestAnimationFrame.
