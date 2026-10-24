@@ -14,4 +14,4 @@ Je suis resté parce que ces engagements se sont concrétisés. Le salaire compt
 
 ## État
 
-Scénario et diapositive préparés. La vidéo parlante n’est pas encore générée : HeyGen doit être connecté.
+Version interactive intégrée : personnage vectoriel animé, transcription en quatre séquences et narration via une voix de synthèse française disponible dans le navigateur. Animation silencieuse avec message explicite en l’absence de voix française. Aucun fichier vidéo MP4 généré.

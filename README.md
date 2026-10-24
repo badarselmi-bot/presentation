@@ -14,5 +14,5 @@ Durée prévue : 9 min 50 s, avec le témoignage de 50 secondes. Les notes et le
 
 Illustrations vectorielles locales dans public/illustrations, avec apparitions progressives. Le bouton Exporter PDF a été retiré.
 
-La diapositive 10 contient un aperçu animé sans voix du témoignage fictif de Yassine. La vidéo avec avatar parlant n’est pas encore générée : connexion HeyGen requise. Le scénario complet est dans TEMOIGNAGE-VIDEO.md. La conclusion devient la diapositive 11.
+La diapositive 10 présente le témoignage fictif de Yassine sous forme de personnage animé. La lecture utilise une voix française de synthèse disponible dans le navigateur, avec transcription par séquence. Si aucune voix française n’est disponible, l’animation fonctionne sans son avec un message explicite. Il ne s’agit pas d’un fichier vidéo MP4. Le scénario complet est dans TEMOIGNAGE-VIDEO.md. La conclusion devient la diapositive 11.
 
