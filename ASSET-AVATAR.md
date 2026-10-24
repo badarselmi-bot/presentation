@@ -1,0 +1,9 @@
+# Avatar humain de Yassine
+
+Méthode : outil intégré ImageGen. Personnage fictif ; aucune personne réelle représentée intentionnellement.
+
+Fichier utilisé : `public/illustrations/yassine-human-expressions.png`. Atlas 2 × 2 ; les cadrages sont réalisés en CSS, sans déformation. Les expressions changent par fondu. Les mouvements sont un déplacement et un zoom légers du portrait, sans synchronisation des lèvres.
+
+## Prompt final
+
+Use case: photorealistic-natural. Asset type: single 2 by 2 expression atlas for a French university presentation interactive human narrator. Create one square image divided into EXACT FOUR equal rectangular quadrants with no gutters, borders, text or graphic labels. Each quadrant is an independent studio portrait, of the EXACT SAME fictional Tunisian male developer Yassine age 28, natural medium olive skin, short dark slightly wavy hair, light neatly trimmed stubble, brown eyes, wearing the EXACT SAME plain terracotta orange overshirt over cream T-shirt. Same clean solid warm cream #F7F7F2 background, soft natural studio lighting, realistic skin texture, editorial photographic quality, looking into camera. Waist-up framing in each quadrant, FULL head and both hands comfortably inside each quadrant, generous consistent headroom. Top left: warm enthusiastic modest smile, open hand welcoming gesture near chest. Top right: thoughtful slightly concerned expression, one hand loosely at chin. Bottom left: engaged explaining expression, open palm illustrating a point, lips naturally parted slightly. Bottom right: confident warm smile, hand near heart, grateful calm. Identity, clothing, lens, lighting, framing and background must match across all four. Human anatomy natural, five fingers, no exaggerated expressions, no office environment, no laptop, no logos, no watermark. This is a sprite atlas asset, not a final slide.
