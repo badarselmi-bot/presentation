@@ -1,6 +1,6 @@
 # The Talent Factor — Notes orales
 
-Durée totale : 9 minutes.
+Durée totale : 9 min 50 s.
 
 ## 01 — La guerre des talents
 
@@ -56,7 +56,13 @@ Durée indicative : 65 secondes.
 
 En Tunisie, la mobilité internationale élargit les possibilités des compétences qualifiées. Les employeurs locaux peuvent être en concurrence avec des entreprises étrangères et des opportunités à distance. L’OCDE souligne également un décalage entre les compétences disponibles et les besoins des employeurs. Prenons un cas pédagogique fictif : une entreprise tunisienne de services numériques souhaite retenir une développeuse sollicitée à l’étranger. Elle peut proposer une formation, un parcours vers un rôle de référente et de meilleures conditions de travail. Ce n’est pas une garantie de rétention : la décision reste personnelle. La mobilité peut aussi favoriser des transferts de compétences grâce aux liens avec la diaspora.
 
-## 10 — Le talent choisit aussi son entreprise
+## 10 — Yassine : pourquoi j’ai choisi de rester
+
+Durée indicative : 50 secondes.
+
+Cette séquence est un cas pédagogique fictif. Yassine, développeur en Tunisie, raconte son recrutement, ses doutes et les engagements concrets qui l’ont convaincu de rester. L’aperçu animé présente le scénario sans voix ; la vidéo avec avatar parlant reste à générer via HeyGen. Lancer l’aperçu ou lire le texte pendant environ cinquante secondes. Faire ensuite le lien avec les leviers étudiés : reconnaissance, formation, évolution et équilibre de vie.
+
+## 11 — Le talent choisit aussi son entreprise
 
 Durée indicative : 45 secondes.
 
