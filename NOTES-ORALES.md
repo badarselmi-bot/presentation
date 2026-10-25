@@ -56,11 +56,11 @@ Durée indicative : 65 secondes.
 
 En Tunisie, la mobilité internationale élargit les possibilités des compétences qualifiées. Les employeurs locaux peuvent être en concurrence avec des entreprises étrangères et des opportunités à distance. L’OCDE souligne également un décalage entre les compétences disponibles et les besoins des employeurs. Prenons un cas pédagogique fictif : une entreprise tunisienne de services numériques souhaite retenir une développeuse sollicitée à l’étranger. Elle peut proposer une formation, un parcours vers un rôle de référente et de meilleures conditions de travail. Ce n’est pas une garantie de rétention : la décision reste personnelle. La mobilité peut aussi favoriser des transferts de compétences grâce aux liens avec la diaspora.
 
-## 10 — Yassine : pourquoi j’ai choisi de rester
+## 10 — Le récit en vidéo
 
-Durée indicative : 50 secondes.
+Durée indicative : 41 secondes.
 
-Cette séquence est un cas pédagogique fictif. Yassine, développeur de 27 ans en Tunisie, raconte en six scènes ses débuts, une offre concurrente, ses doutes, le dialogue avec son manager et sa décision de rester. Le personnage animé raconte son expérience avec une voix de synthèse française si le navigateur en dispose. Sinon, l’animation peut être lue sans son et le texte reste affiché. Lancer la lecture ou lire le texte pendant environ cinquante secondes. La séquence affiche ensuite quatre leviers : reconnaissance, formation, évolution professionnelle et équilibre de vie. La synchronisation de la voix et des expressions est indicative.
+Lancer la vidéo fournie, d’une durée de 41 secondes. Les paroles sont synchronisées avec la lecture et consultables à droite. Le récit porte sur la visibilité de carrière, l’écoute des objectifs, la formation, l’autonomie et l’équilibre de vie. Il sert d’illustration pédagogique et ne doit pas être présenté comme la preuve d’une expérience réelle. La vidéo possède sa propre piste audio : aucune synthèse vocale supplémentaire n’est utilisée.
 
 ## 11 — Le talent choisit aussi son entreprise
 

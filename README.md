@@ -21,3 +21,6 @@ Avatar humain : portraits photoréalistes fictifs créés par ImageGen, quatre e
 
 ## Séquence narrative actuelle
 La diapositive Yassine est une mini-interview SVG/CSS en six scènes (27 ans), avec le script demandé, des sous-titres progressifs, un lecteur visuel de 50 secondes, la synthèse pédagogique et les commandes Lecture/Pause/Recommencer/Son. La voix française est vérifiée via Web Speech API ; durée audio indicative, synchronisation approximative. Pas de son automatique. Sources réutilisables dans src/story/. La mise en page reste en 16:9 sur vidéoprojecteur et se réorganise sur mobile. Les portraits photographiques de la version précédente ne sont plus utilisés.
+
+## Vidéo fournie (version actuelle)
+La diapositive 10 utilise désormais le MP4 fourni dans public/media/temoignage-fourni.mp4 (41 secondes). L’avatar et sa voix de synthèse sont remplacés. Les sous-titres français proviennent d’une transcription automatique locale et sont stockés dans public/media/temoignage-fr.vtt. Le panneau de paroles est synchronisé avec la vidéo et permet de rechercher un passage en cliquant sur une phrase. Source du texte : src/story/videoCaptions.json ; transcription lisible : PAROLES-VIDEO.md. Aucun lancement automatique du son. La ligne de durée des notes a été retirée dans toutes les diapositives.
