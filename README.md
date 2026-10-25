@@ -1,29 +1,36 @@
-# The Talent Factor
-Présentation universitaire en français — React, TypeScript, Tailwind CSS et Vite.
+# The Talent Factor — La guerre des talents
 
-## Lancer
-Avec Node.js installé : `npm install`, puis `npm run dev`. Ouvrir l’URL indiquée.
-Production : `npm run build`, puis `npm run preview`.
+Présentation universitaire en français, réorganisée selon le texte fourni : **12 diapositives**. React, TypeScript, Tailwind CSS et Vite.
 
-## Utiliser
+## Plan
+1. Page de garde.
+2. Le capital humain, une richesse stratégique et la problématique.
+3. Définition, origine et trois notions fondamentales.
+4. Les principales causes.
+5. Les enjeux : gestion efficace et inefficace.
+6. Les stratégies d’attraction.
+7. Les raisons des départs.
+8. Les stratégies de fidélisation.
+9. Étude de cas fictive de Yassine, avec la vidéo fournie.
+10. La guerre des talents en Tunisie.
+11. Le rôle du manager.
+12. Conclusion : attirer, développer, fidéliser.
+
+Le texte de référence fourni est conservé dans CONTENU-UNIVERSITAIRE.txt. Les diapositives en retiennent les idées sous forme de textes courts, de schémas et de cartes. Les anciens encadrés séparés et le bouton Notes ne sont plus utilisés. Les noms des étudiants restent à renseigner sur la couverture.
+
+## Utilisation
 - Flèches gauche/droite, Page précédente/suivante ou espace : navigation.
 - Début / Fin : première / dernière diapositive.
-- S : sommaire ; F : plein écran ; Échap : fermer les panneaux.
+- S : sommaire ; B : bibliographie ; F : plein écran ; Échap : fermer une fenêtre.
+- La vidéo est à la diapositive 9 (#8). Aucun son automatique. Le lecteur possède sa propre piste audio et ses commandes de lecture, de volume et de plein écran.
+- Les sous-titres sont dans public/media/temoignage-fr.vtt. Cliquer sur les paroles permet d’atteindre le passage correspondant. La narration s’arrête en quittant la diapositive.
+- Le scénario de l’offre concurrente est un cas pédagogique fictif ; les sous-titres restent une transcription de la vidéo fournie.
+- Le format est 16:9 sur grand écran. Les mises en page se réorganisent verticalement sur mobile. Respect du réglage prefers-reduced-motion.
 
-Durée prévue : 9 min 50 s, avec le témoignage de 50 secondes. Les notes et les sources sont consultables sur chaque diapositive et exclues de l’impression. Aucun chiffre statistique n’est utilisé. Le cas tunisien est explicitement fictif. Les références sont dans src/data.ts. Les illustrations sont des SVG originaux intégrés. Inter est chargé depuis Google Fonts avec Arial en secours. Respect du réglage de réduction des animations.
+## Bibliographie
+Ouvrages The War for Talent et The Talent Management Handbook ; sources OIT, INS Tunisie et OCDE. Liens et références dans src/data.ts et dans le panneau Références. Aucun chiffre statistique ajouté aux diapositives.
 
-Illustrations vectorielles locales dans public/illustrations, avec apparitions progressives. Le bouton Exporter PDF a été retiré.
+## Développement
+Node.js requis. Installer avec `npm install`, lancer avec `npm run dev`, compiler avec `npm run build`.
 
-La diapositive 10 présente le témoignage fictif de Yassine sous forme de personnage animé. La lecture utilise une voix française de synthèse disponible dans le navigateur, avec transcription par séquence. Si aucune voix française n’est disponible, l’animation fonctionne sans son avec un message explicite. Il ne s’agit pas d’un fichier vidéo MP4. Le scénario complet est dans TEMOIGNAGE-VIDEO.md. La conclusion devient la diapositive 11.
-
-
-Avatar humain : portraits photoréalistes fictifs créés par ImageGen, quatre expressions liées au récit, transitions en fondu et mouvements de caméra subtils. Aucun mouvement réel des lèvres ni synchronisation labiale. Asset local : public/illustrations/yassine-human-expressions.png. Prompt dans ASSET-AVATAR.md.
-
-## Séquence narrative actuelle
-La diapositive Yassine est une mini-interview SVG/CSS en six scènes (27 ans), avec le script demandé, des sous-titres progressifs, un lecteur visuel de 50 secondes, la synthèse pédagogique et les commandes Lecture/Pause/Recommencer/Son. La voix française est vérifiée via Web Speech API ; durée audio indicative, synchronisation approximative. Pas de son automatique. Sources réutilisables dans src/story/. La mise en page reste en 16:9 sur vidéoprojecteur et se réorganise sur mobile. Les portraits photographiques de la version précédente ne sont plus utilisés.
-
-## Vidéo fournie (version actuelle)
-La diapositive 10 utilise désormais le MP4 fourni dans public/media/temoignage-fourni.mp4 (41 secondes). L’avatar et sa voix de synthèse sont remplacés. Les sous-titres français proviennent d’une transcription automatique locale et sont stockés dans public/media/temoignage-fr.vtt. Le panneau de paroles est synchronisé avec la vidéo et permet de rechercher un passage en cliquant sur une phrase. Source du texte : src/story/videoCaptions.json ; transcription lisible : PAROLES-VIDEO.md. Aucun lancement automatique du son. La ligne de durée des notes a été retirée dans toutes les diapositives.
-
-## Explications intégrées
-Les idées des anciennes notes sont désormais condensées dans un encadré visible sur chacune des onze diapositives. Le bouton, le panneau et le raccourci N des notes ont été supprimés. Les références sont visibles sur les diapositives Définition et Tunisie. Le texte intégral des notes est conservé dans NOTES-ORALES.md ; les synthèses de projection sont dans src/slideExplanations.ts.
+Composants principaux : src/App.tsx (navigation), src/PresentationSlides.tsx (contenu), src/academic.css (design), src/TalentStory.tsx (vidéo et paroles).
