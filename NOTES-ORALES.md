@@ -60,7 +60,7 @@ En Tunisie, la mobilité internationale élargit les possibilités des compéten
 
 Durée indicative : 41 secondes.
 
-Lancer la vidéo fournie, d’une durée de 41 secondes. Les paroles sont synchronisées avec la lecture et consultables à droite. Le récit porte sur la visibilité de carrière, l’écoute des objectifs, la formation, l’autonomie et l’équilibre de vie. Il sert d’illustration pédagogique et ne doit pas être présenté comme la preuve d’une expérience réelle. La vidéo possède sa propre piste audio : aucune synthèse vocale supplémentaire n’est utilisée.
+L’idée de cette vidéo est de montrer la guerre des talents du point de vue du collaborateur. Le concept repose sur un passage du doute à l’engagement : au départ, il manque de visibilité sur son avenir et sur la reconnaissance de son travail. L’écoute du manager, un plan de formation et des perspectives d’évolution lui permettent ensuite de se projeter dans l’entreprise. L’autonomie et l’équilibre de vie renforcent son envie de rester. Ce récit fictif rend les leviers de fidélisation concrets : un talent s’engage lorsqu’il se sent reconnu, accompagné et capable de construire son avenir.
 
 ## 11 — Le talent choisit aussi son entreprise
 
