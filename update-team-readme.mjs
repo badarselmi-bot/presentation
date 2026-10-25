@@ -1,0 +1,3 @@
+import {readFileSync,writeFileSync} from 'node:fs';
+import {slides} from './src/data.ts';
+let r=readFileSync('README.md','utf8');r=r.replace('**12 diapositives**','**14 diapositives**');const start=r.indexOf('## Plan');const end=r.indexOf('Le texte de référence',start);r=r.slice(0,start)+'## Plan\n'+slides.map((s,i)=>`${i+1}. ${s.title}.`).join('\n')+'\n\n'+r.slice(end);r=r.replace('La vidéo est à la diapositive 9 (#8)','La vidéo est à la diapositive 10 (#9)').replace('Les noms des étudiants restent à renseigner sur la couverture.','Les cinq membres de l’équipe sont présentés sur la deuxième diapositive.');writeFileSync('README.md',r);

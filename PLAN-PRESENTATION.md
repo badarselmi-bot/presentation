@@ -2,27 +2,31 @@
 
 01. **La guerre des talents** — ouverture
 
-02. **Le capital humain, une richesse stratégique** — comprendre
+02. **L’équipe de projet** — présentation
 
-03. **Définition et origine de la guerre des talents** — comprendre
+03. **Le capital humain, une richesse stratégique** — comprendre
 
-04. **Les principales causes de la guerre des talents** — comprendre
+04. **Définition et origine de la guerre des talents** — comprendre
 
-05. **Les enjeux de la guerre des talents** — comprendre
+05. **Les principales causes de la guerre des talents** — comprendre
 
-06. **Les stratégies pour attirer les talents** — agir
+06. **Les enjeux de la guerre des talents** — comprendre
 
-07. **Pourquoi les talents quittent-ils leur entreprise ?** — agir
+07. **Les stratégies pour attirer les talents** — agir
 
-08. **Les stratégies de fidélisation des talents** — agir
+08. **Pourquoi les talents quittent-ils leur entreprise ?** — agir
 
-09. **Yassine : pourquoi j’ai choisi de rester** — appliquer
+09. **Les stratégies de fidélisation des talents** — agir
 
-10. **La guerre des talents en Tunisie** — appliquer
+10. **Yassine : pourquoi j’ai choisi de rester** — appliquer
 
-11. **Le rôle du manager dans la guerre des talents** — appliquer
+11. **La guerre des talents en Tunisie** — appliquer
 
-12. **Attirer. Développer. Fidéliser.** — conclure
+12. **Le rôle du manager dans la guerre des talents** — appliquer
+
+13. **Attirer. Développer. Fidéliser.** — conclure
+
+14. **Merci pour votre attention** — clôture
 
 ## Sources
 
