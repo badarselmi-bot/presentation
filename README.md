@@ -8,7 +8,7 @@ Production : `npm run build`, puis `npm run preview`.
 ## Utiliser
 - Flèches gauche/droite, Page précédente/suivante ou espace : navigation.
 - Début / Fin : première / dernière diapositive.
-- S : sommaire ; N : notes orales ; F : plein écran ; Échap : fermer les panneaux.
+- S : sommaire ; F : plein écran ; Échap : fermer les panneaux.
 
 Durée prévue : 9 min 50 s, avec le témoignage de 50 secondes. Les notes et les sources sont consultables sur chaque diapositive et exclues de l’impression. Aucun chiffre statistique n’est utilisé. Le cas tunisien est explicitement fictif. Les références sont dans src/data.ts. Les illustrations sont des SVG originaux intégrés. Inter est chargé depuis Google Fonts avec Arial en secours. Respect du réglage de réduction des animations.
 
@@ -24,3 +24,6 @@ La diapositive Yassine est une mini-interview SVG/CSS en six scènes (27 ans), a
 
 ## Vidéo fournie (version actuelle)
 La diapositive 10 utilise désormais le MP4 fourni dans public/media/temoignage-fourni.mp4 (41 secondes). L’avatar et sa voix de synthèse sont remplacés. Les sous-titres français proviennent d’une transcription automatique locale et sont stockés dans public/media/temoignage-fr.vtt. Le panneau de paroles est synchronisé avec la vidéo et permet de rechercher un passage en cliquant sur une phrase. Source du texte : src/story/videoCaptions.json ; transcription lisible : PAROLES-VIDEO.md. Aucun lancement automatique du son. La ligne de durée des notes a été retirée dans toutes les diapositives.
+
+## Explications intégrées
+Les idées des anciennes notes sont désormais condensées dans un encadré visible sur chacune des onze diapositives. Le bouton, le panneau et le raccourci N des notes ont été supprimés. Les références sont visibles sur les diapositives Définition et Tunisie. Le texte intégral des notes est conservé dans NOTES-ORALES.md ; les synthèses de projection sont dans src/slideExplanations.ts.
